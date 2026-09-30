@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fdb900">
+  <title>Café 7 Dream</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="inicio">
+    <button class="menu-btn" type="button" aria-label="Menú">☰</button>
+    <a class="logo" href="#inicio" aria-label="Cafe 7 Dream, inicio">
+      <img src="assets/logo.png" alt="Logo de Café 7 Dream">
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#bebidas">Bebidas</a>
+      <a href="#postres">Postres</a>
+      <a href="#ver-mas">Ver más</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="inicio">
+      <div class="inicio-contenido">
+        <h1>Disfruta nuestra<br>variedad de cafés y<br>postres</h1>
+        <div class="botones">
+          <a href="#bebidas" class="btn btn-principal">Comprar ya</a>
+          <a href="#ver-mas" class="btn btn-secundario">Ver más</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="video" aria-label="Video de presentación">
+      <div class="video-contenedor">
+        <video controls playsinline preload="metadata" poster="assets/logo.png">
+          <source src="assets/cafe-video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section id="bebidas" class="mas-para-ti">
+      <h2>Más para ti</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <img src="assets/cafes-calientes.jpg" alt="Taza de café caliente" loading="lazy">
+          <div class="tarjeta-contenido">
+            <h3>Cafés calientes</h3>
+            <p>Espresso, americano, cappuccino, latte y mocha.</p>
+            <a href="#postres" class="btn-ver-mas">Ver más</a>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <img src="assets/bebidas.jpg" alt="Bebidas heladas" loading="lazy">
+          <div class="tarjeta-contenido">
+            <h3>Bebidas heladas</h3>
+            <p>Limonada clásica, té helado, maracuyá, fresa, chocolate frío y frappe de vainilla.</p>
+            <a href="#postres" class="btn-ver-mas">Ver más</a>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <img src="assets/cafes-frios.png" alt="Selección de cafés fríos" loading="lazy">
+          <div class="tarjeta-contenido">
+            <h3>Cafés fríos</h3>
+            <p>Iced americano, iced latte, cold brew, frappe de café y mocha frío.</p>
+            <a href="#postres" class="btn-ver-mas">Ver más</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="postres" class="postres" aria-label="Postres"></section>
+    <section id="ver-mas" class="ver-mas" aria-label="Más información"></section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-logo">
+        <a href="#inicio" aria-label="Volver al inicio"><img src="assets/logo.png" alt="Cafe 7 Dream"></a>
+        <div class="redes" aria-label="Redes sociales">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+      </div>
+      <div class="footer-columna">
+        <h4>Créditos</h4>
+        <a href="#">Flores Paz</a>
+        <a href="#">Lesly</a>
+      </div>
+      <div class="footer-columna">
+        <h4>Ver más</h4>
+        <a href="#bebidas">Bebidas</a>
+        <a href="#bebidas">Cafés</a>
+        <a href="#postres">Postres</a>
+        <a href="#bebidas">Menú</a>
+      </div>
+      <div class="footer-columna">
+        <h4>Ayuda</h4>
+        <a href="#">Contacto</a>
+        <a href="#">Soporte</a>
+        <a href="#">Términos</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
