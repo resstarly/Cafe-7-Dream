@@ -4,104 +4,166 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#fdb900">
-  <title>JENO café &amp; tatam</title>
+  <title>Café 7 Dream | Tu pausa favorita</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header" id="inicio">
-    <button class="menu-btn" type="button" aria-label="Menú">☰</button>
-    <a class="logo" href="#inicio" aria-label="JENO café, inicio">
-      <img src="assets/logo.png" alt="Logo de JENO café &amp; tatam">
+    <a class="logo" href="#inicio" aria-label="Café 7 Dream, inicio">
+      <img src="assets/logo.png" alt="Logo de Café Dream">
     </a>
     <nav class="nav" aria-label="Navegación principal">
-      <a href="#bebidas">Bebidas</a>
-      <a href="#postres">Postres</a>
-      <a href="#ver-mas">Ver más</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#bebidas">Menú</a>
+      <a href="#galeria">Galería</a>
+      <a href="#nosotros">Nosotros</a>
     </nav>
+    <a class="header-cta" href="#bebidas">Descubre el menú <span>↗</span></a>
   </header>
 
   <main>
-    <section class="inicio">
-      <div class="inicio-contenido">
-        <h1>Disfruta nuestra<br>variedad de cafés y<br>postres</h1>
+    <section class="hero">
+      <div class="hero-fondo" aria-hidden="true">
+        <span class="burbuja burbuja-uno"></span>
+        <span class="burbuja burbuja-dos"></span>
+        <span class="burbuja burbuja-tres"></span>
+      </div>
+      <div class="hero-contenido">
+        <p class="etiqueta"><span class="punto"></span> CAFÉ • POSTRES • BUENOS MOMENTOS</p>
+        <h1>Tu pausa.<br><span>Tu momento.</span><br>Tu café.</h1>
+        <p class="hero-descripcion">Un espacio para bajar el ritmo, recargar energía y disfrutar algo rico, taza a taza.</p>
         <div class="botones">
-          <a href="#bebidas" class="btn btn-principal">Comprar ya</a>
-          <a href="#ver-mas" class="btn btn-secundario">Ver más</a>
+          <a href="#bebidas" class="btn btn-principal">Explorar menú <span>↗</span></a>
+          <a href="#nosotros" class="btn btn-secundario">Conócenos</a>
         </div>
+        <div class="hero-nota"><span>7</span><p>Un pequeño descanso<br>puede cambiar tu día.</p></div>
+      </div>
+      <div class="hero-sello" aria-label="Hecho para disfrutar">
+        <span>TU PAUSA</span><strong>FAVORITA</strong><span>DE CADA DÍA ✳</span>
       </div>
     </section>
 
-    <section class="video" aria-label="Video de presentación">
+    <section class="video-seccion" aria-label="Video de presentación">
+      <div class="seccion-intro intro-video">
+        <p class="sobrelinea">UN MOMENTO PARA TI</p>
+        <h2>El mood perfecto<br>empieza aquí<span>.</span></h2>
+      </div>
       <div class="video-contenedor">
         <video controls playsinline preload="metadata" poster="assets/logo.png">
           <source src="assets/cafe-video.mp4" type="video/mp4">
           Tu navegador no puede reproducir este video.
         </video>
+        <span class="video-etiqueta">SLOW DOWN &amp; SIP</span>
       </div>
     </section>
 
-    <section id="bebidas" class="mas-para-ti">
-      <h2>Más para ti</h2>
+    <section id="bebidas" class="menu-seccion">
+      <div class="seccion-cabecera">
+        <div>
+          <p class="sobrelinea">ENCUENTRA TU FAVORITO</p>
+          <h2>Algo rico para<br><span>cada mood.</span></h2>
+        </div>
+        <p class="cabecera-texto">Desde un café calentito hasta una bebida refrescante. ¿Cuál va contigo hoy?</p>
+      </div>
       <div class="tarjetas">
-        <article class="tarjeta">
-          <img src="assets/cafes-calientes.jpg" alt="Taza de café caliente" loading="lazy">
+        <article class="tarjeta tarjeta-verde">
+          <div class="tarjeta-imagen">
+            <img src="assets/cafes-calientes.jpg" alt="Selección de cafés calientes" loading="lazy">
+            <span class="numero-tarjeta">01</span>
+          </div>
           <div class="tarjeta-contenido">
+            <p class="categoria">CLÁSICOS DE SIEMPRE</p>
             <h3>Cafés calientes</h3>
-            <p>Espresso, americano, cappuccino, latte y mocha.</p>
-            <a href="#postres" class="btn-ver-mas">Ver más</a>
+            <p>Espresso, americano, cappuccino, latte y mocha para disfrutar sin apuro.</p>
+            <a href="#galeria" class="btn-ver-mas">Ver más <span>↗</span></a>
           </div>
         </article>
-        <article class="tarjeta">
-          <img src="assets/bebidas.jpg" alt="Bebidas heladas" loading="lazy">
+        <article class="tarjeta tarjeta-amarilla">
+          <div class="tarjeta-imagen">
+            <img src="assets/bebidas.jpg" alt="Bebidas heladas y refrescantes" loading="lazy">
+            <span class="numero-tarjeta">02</span>
+          </div>
           <div class="tarjeta-contenido">
+            <p class="categoria">FRESCO Y DELICIOSO</p>
             <h3>Bebidas heladas</h3>
-            <p>Limonada clásica, té helado, maracuyá, fresa, chocolate frío y frappe de vainilla.</p>
-            <a href="#postres" class="btn-ver-mas">Ver más</a>
+            <p>Limonada, té helado, maracuyá, fresa, chocolate frío y frappe de vainilla.</p>
+            <a href="#galeria" class="btn-ver-mas">Ver más <span>↗</span></a>
           </div>
         </article>
-        <article class="tarjeta">
-          <img src="assets/cafes-frios.png" alt="Selección de cafés fríos" loading="lazy">
+        <article class="tarjeta tarjeta-crema">
+          <div class="tarjeta-imagen">
+            <img src="assets/cafes-frios.png" alt="Vasos de café frío" loading="lazy">
+            <span class="numero-tarjeta">03</span>
+          </div>
           <div class="tarjeta-contenido">
+            <p class="categoria">ENERGÍA EN FRÍO</p>
             <h3>Cafés fríos</h3>
-            <p>Iced americano, iced latte, cold brew, frappe de café y mocha frío.</p>
-            <a href="#postres" class="btn-ver-mas">Ver más</a>
+            <p>Iced americano, iced latte, cold brew y frappes para recargar tu día.</p>
+            <a href="#galeria" class="btn-ver-mas">Ver más <span>↗</span></a>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="postres" class="postres" aria-label="Postres"></section>
-    <section id="ver-mas" class="ver-mas" aria-label="Más información"></section>
+    <section id="galeria" class="galeria-seccion">
+      <div class="galeria-titulo">
+        <p class="sobrelinea">CAFÉ 7 DREAM EN REDES</p>
+        <h2>Contenido para<br><span>redes sociales.</span></h2>
+        <p>Diseños verticales para compartir en Instagram y otras plataformas.</p>
+      </div>
+      <div class="galeria-grid">
+        <figure class="foto">
+          <img src="assets/vertical 1.jpg" alt="Diseño vertical para redes sociales 1" loading="lazy">
+          <figcaption>Vertical 1</figcaption>
+        </figure>
+        <figure class="foto">
+          <img src="assets/vertical 2.jpg" alt="Diseño vertical para redes sociales 2" loading="lazy">
+          <figcaption>Vertical 2</figcaption>
+        </figure>
+        <figure class="foto">
+          <img src="assets/vertical 3.jpg" alt="Diseño vertical para redes sociales 3" loading="lazy">
+          <figcaption>Vertical 3</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+      <div class="nosotros-numero">7</div>
+      <div class="nosotros-contenido">
+        <p class="sobrelinea">BIENVENIDO A TU LUGAR FELIZ</p>
+        <h2>No necesitas una<br>ocasión especial<span>.</span></h2>
+        <p>En Café 7 Dream creemos que los momentos cotidianos también merecen algo especial. Ven por tu bebida favorita, quédate por el buen mood y haz de tu pausa una pequeña celebración.</p>
+        <a href="#inicio" class="btn btn-oscuro">Volver al inicio <span>↑</span></a>
+      </div>
+      <div class="nosotros-sticker">TAKE A<br><strong>BREAK!</strong> ✳</div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-contenido">
-      <div class="footer-logo">
-        <a href="#inicio" aria-label="Volver al inicio"><img src="assets/logo.png" alt="JENO café &amp; tatam"></a>
-        <div class="redes" aria-label="Redes sociales">
-          <a href="#" aria-label="Instagram">◎</a>
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="X">X</a>
-        </div>
+  <footer class="footer" id="contacto">
+    <div class="footer-superior">
+      <a class="footer-logo" href="#inicio"><img src="assets/logo.png" alt="Café 7 Dream"></a>
+      <div class="footer-mensaje">
+        <p>UNA TAZA, UN SUEÑO, UN BUEN MOMENTO.</p>
+        <h2>See you<br><span>over coffee.</span></h2>
       </div>
-      <div class="footer-columna">
-        <h4>Créditos</h4>
-        <a href="#">Flores Paz</a>
-        <a href="#">Lesly</a>
-      </div>
-      <div class="footer-columna">
-        <h4>Ver más</h4>
-        <a href="#bebidas">Bebidas</a>
-        <a href="#bebidas">Cafés</a>
-        <a href="#postres">Postres</a>
+      <div class="footer-links">
+        <h3>Explora</h3>
+        <a href="#inicio">Inicio</a>
         <a href="#bebidas">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#nosotros">Nosotros</a>
       </div>
-      <div class="footer-columna">
-        <h4>Ayuda</h4>
-        <a href="#">Contacto</a>
-        <a href="#">Soporte</a>
-        <a href="#">Términos</a>
+      <div class="footer-links">
+        <h3>Contacto</h3>
+        <a href="mailto:hola@cafe7dream.com">hola@cafe7dream.com</a>
+        <a href="#contacto">Instagram · Facebook</a>
+        <p>Atención con mucho cariño.</p>
       </div>
+    </div>
+    <div class="footer-inferior">
+      <p>© 2026 Café 7 Dream. Todos los derechos reservados.</p>
+      <p>Diseño y créditos: Lesly Flores</p>
+      <a href="#inicio">Volver arriba ↑</a>
     </div>
   </footer>
 </body>
